@@ -1,0 +1,1 @@
+export const metadata={title:'Gizlilik'}; export default function P(){return (<section className='prose prose-invert max-w-none'><h1>Gizlilik</h1><p>Kısa gizlilik bildirimi. Çerez kullanılabilir.</p></section>)}

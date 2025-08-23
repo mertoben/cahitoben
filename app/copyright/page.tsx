@@ -1,0 +1,1 @@
+export const metadata={title:'Telif Hakları'}; export default function C(){return (<section className='prose prose-invert max-w-none'><h1>Telif Hakları</h1><p>Tüm içerikler ilgili hak sahiplerine aittir.</p></section>)}

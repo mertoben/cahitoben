@@ -1,0 +1,1 @@
+export const metadata={title:'Kullanım Şartları'}; export default function T(){return (<section className='prose prose-invert max-w-none'><h1>Kullanım Şartları</h1><p>Site içeriğinin izinsiz kopyalanması yasaktır.</p></section>)}
