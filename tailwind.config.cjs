@@ -1,21 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',            // <-- ÖNEMLİ
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        // Tek noktadan yönetilen marka rengi
-        brand: {
-          400: "#00ADB5", // linkler, vurgu
-          500: "#00ADB5", // aktif buton
-          600: "#008B92", // hover/daha koyu ton
-        },
+        accent: { DEFAULT: '#FFD000', dark: '#E6BC00', fg: '#111111' },
       },
+      borderRadius: { '2xl': '1rem' },
     },
   },
-  // Vercel build hatalarını önlemek için ekstra plugin yok
   plugins: [],
 }
