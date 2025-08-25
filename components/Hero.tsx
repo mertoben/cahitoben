@@ -6,7 +6,7 @@ export default function Hero(){
         Türk pop tarihinin özgün isimlerinden. Arşiv kayıtları yeniden keşifte; resim çalışmaları erişimde.
       </p>
       <div className="mt-8 flex items-center justify-center gap-4">
-        <a href="/discography" className="bg-pink-500/90 hover:bg-pink-500 text-white rounded-full px-5 py-2 no-underline">Diskografi</a>
+        <a href="/discography" className="bg-gold hover:bg-gold-dark text-black rounded-full px-5 py-2 no-underline">Diskografi</a>
         <a href="/art" className="border border-zinc-700 hover:border-zinc-500 rounded-full px-5 py-2 no-underline">Resim Çalışmaları</a>
       </div>
     </section>
