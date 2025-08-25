@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{ --bg:#0b0b0c; --fg:#f4f4f5; }
-html,body{ height:100%; background:var(--bg); color:var(--fg); }
-.container{ @apply max-w-6xl mx-auto px-4; }
-.section-title{ @apply text-2xl md:text-3xl font-semibold tracking-tight; }
-.card{ @apply bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4 transition hover:border-zinc-700; }
-a{ @apply underline-offset-2 hover:underline; }
-.nav-link{ @apply no-underline hover:underline; }
-.btn-gold {
-  @apply bg-gold text-black font-semibold px-4 py-2 rounded-lg transition hover:bg-gold-dark;
-}
+@layer components {
+  .card { @apply p-4 rounded-lg bg-zinc-900/60 ring-1 ring-white/10; }
+  .nav-link { @apply no-underline hover:underline; }
 
+  /* Tek yerden yönetilen buton */
+  .btn-brand {
+    @apply bg-brand-500 text-white font-semibold px-4 py-2 rounded-lg transition hover:bg-brand-600;
+  }
+}
