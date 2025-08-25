@@ -20,7 +20,7 @@ export default function SiteHeader(){
         <Link href="/" className="font-bold text-lg tracking-wide no-underline hover:no-underline">Cahit Oben</Link>
         <nav className="hidden md:flex gap-6 text-sm">
           {items.map(i => (
-            <Link key={i.href} href={i.href} className={`nav-link ${path===i.href ? 'text-pink-400' : 'text-zinc-300 hover:text-white'}`}>{i.label}</Link>
+            <Link key={i.href} href={i.href} className={`nav-link ${path===i.href ? 'text-gold' : 'text-zinc-300 hover:text-white'}`}>{i.label}</Link>
           ))}
         </nav>
       </div>
