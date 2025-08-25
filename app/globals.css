@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .card { @apply p-4 rounded-lg bg-zinc-900/60 ring-1 ring-white/10; }
-  .nav-link { @apply no-underline hover:underline; }
+/* Temel tipografi/renk */
+:root { color-scheme: dark; }           /* Tarayıcıya da koyu ipucu */
+html, body { @apply bg-zinc-950 text-zinc-100; }
 
-  /* Tek yerden yönetilen buton */
-  .btn-brand {
-    @apply bg-brand-500 text-white font-semibold px-4 py-2 rounded-lg transition hover:bg-brand-600;
-  }
-}
+/* Tek yerden link & buton stilleri */
+.nav-link { @apply text-accent hover:underline; }
+.btn-accent { @apply bg-accent text-accent-fg font-semibold px-4 py-2 rounded-full transition hover:bg-accent-dark; }
+.btn-ghost  { @apply bg-zinc-800/60 text-zinc-100 border border-zinc-700 rounded-full px-4 py-2 hover:bg-zinc-700; }
+
+/* Kart */
+.card { @apply bg-zinc-900/60 border border-zinc-800 rounded-2xl p-5 shadow-lg; }
