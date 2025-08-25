@@ -7,23 +7,25 @@ export const metadata = {
   title: "Cahit Oben — Resmi Site",
   description: "Diskografi, haberler ve resim çalışmaları.",
 }
-
 export default function HomePage() {
   const featuredAlbums = ALBUMS.slice(0, 3)
   const featuredNews = NEWS.slice(0, 3)
 
   return (
-    <main className="container mx-auto px-4 py-12">
-      {/* HERO */}
-      <section className="mb-12 text-center">
-        <h1 className="text-4xl md:text-6xl font-semibold text-white">Cahit Oben</h1>
-        <p className="text-zinc-300 mt-4 max-w-3xl mx-auto">
-          Türk pop tarihinin özgün isimlerinden. Arşiv kayıtları yeniden keşifte; resim çalışmaları erişimde.
+    <main className="container mx-auto px-4 py-10">
+      {/* Hero */}
+      <section className="mb-10">
+        <h1 className="text-3xl md:text-5xl font-semibold text-white">Cahit Oben</h1>
+        <p className="text-zinc-300 mt-3 max-w-2xl">
+          Arşivden çıkan kayıtlar, resim çalışmaları ve güncel haberler.
         </p>
 
-        <div className="mt-6 flex items-center justify-center gap-3">
-          <Link href="/discography" className="btn-gold">Diskografi</Link>
-          <Link href="/art" className="btn-outline">{/* btn-outline globals.css'te var */}
+        {/* CTA butonları */}
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link href="/discography" className="btn-accent">
+            Diskografi
+          </Link>
+          <Link href="/art" className="btn-ghost">
             Resim Çalışmaları
           </Link>
         </div>
